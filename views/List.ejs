@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="uth-8">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+      
+
+    <div class="box" id="heading">
+
+    <h1> <%= listTitle  %> </h1>
+    </div>
+    <div class="box">
+
+       <ul>
+        <% for( var i=0; i<newListItems.length; i++){ %>
+           <div class="item">
+               <input type="checkbox">
+
+               <p><%= newListItems[i] %> </p>
+            </div>
+           
+        <% } %> 
+        </ul>
+        <form class="item" action="/" method="post">
+            <input type="text" name="newItem" placeholder="new item" autocomplete="off" >
+            <button type="submit" name="list"value=<%= listTitle %>>+</button>
+        </form>
+
+           </div>
+   
+    </div>
+    
+</body>
+    <footer>
+         copyright 2818 App brewery
+    </footer>
+    </html>
+        
+    
+
